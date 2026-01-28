@@ -1,0 +1,96 @@
+@extends('frontend.layouts.main')
+
+@section('main-content')
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header mb-5">
+    <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
+        <h4 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">Our Blog</h4>
+        <div class="d-inline-flex">
+            <p class="m-0 text-white"><a class="text-white" href="">Home</a></p>
+            <p class="m-0 text-white px-2">/</p>
+            <p class="m-0 text-white">Our Blog</p>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+
+<!-- Blog Start -->
+<div class="container pt-5">
+    <div class="d-flex flex-column text-center mb-5">
+        <h4 class="text-primary font-weight-bold">Our Blog</h4>
+        <h4 class="display-4 font-weight-bold">Latest Article From Blog</h4>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 mb-5 blog-item">
+            <img class="img-fluid mb-4" src="{{ asset('frontend/img/blog-1.jpg') }}" alt="Image">
+            <div class="d-flex align-items-center mb-4">
+                <div class="d-flex flex-column align-items-center justify-content-center rounded-circle bg-primary text-white" style="width: 80px; height: 80px;">
+                    <small>01</small>
+                    <strong class="text-uppercase m-0 text-white">Jan</strong>
+                    <small>2045</small>
+                </div>
+                <div class="pl-3">
+                    <h3 class="font-weight-bold">Lorem ipsum dolor sit amet</h3>
+                    <div class="d-flex">
+                        <small class="mr-2 text-muted"><i class="fa fa-user"></i> Admin</small>
+                        <small class="mr-2 text-muted"><i class="fa fa-folder"></i> Web Design</small>
+                        <small class="mr-2 text-muted"><i class="fa fa-comments"></i> 15 Comments</small>
+                    </div>
+                </div>
+            </div>
+            <p>Eos kasd et sea labore...</p>
+            <a class="btn btn-outline-primary mt-2 px-3" href="">Read More <i class="fa fa-angle-right"></i></a>
+        </div>
+
+        <div class="col-lg-6 mb-5 blog-item">
+            <img class="img-fluid mb-4" src="{{ asset('frontend/img/blog-2.jpg') }}" alt="Image">
+            <div class="d-flex align-items-center mb-4">
+                <div class="d-flex flex-column align-items-center justify-content-center rounded-circle bg-primary text-white" style="width: 80px; height: 80px;">
+                    <small>01</small>
+                    <strong class="text-uppercase m-0 text-white">Jan</strong>
+                    <small>2045</small>
+                </div>
+                <div class="pl-3">
+                    <h3 class="font-weight-bold">Lorem ipsum dolor sit amet</h3>
+                    <div class="d-flex">
+                        <small class="mr-2 text-muted"><i class="fa fa-user"></i> Admin</small>
+                        <small class="mr-2 text-muted"><i class="fa fa-folder"></i> Web Design</small>
+                        <small class="mr-2 text-muted"><i class="fa fa-comments"></i> 15 Comments</small>
+                    </div>
+                </div>
+            </div>
+            <p>Eos kasd et sea labore...</p>
+            <a class="btn btn-outline-primary mt-2 px-3" href="">Read More <i class="fa fa-angle-right"></i></a>
+        </div>
+
+        <div class="col-lg-6 mb-5 blog-item">
+            <img class="img-fluid mb-4" src="{{ asset('frontend/img/blog-1.jpg') }}" alt="Image">
+            <p>Eos kasd et sea labore...</p>
+        </div>
+
+        <div class="col-lg-6 mb-5 blog-item">
+            <img class="img-fluid mb-4" src="{{ asset('frontend/img/blog-2.jpg') }}" alt="Image">
+            <p>Eos kasd et sea labore...</p>
+        </div>
+    </div>
+</div>
+<!-- Blog End -->
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-outline-primary back-to-top">
+    <i class="fa fa-angle-double-up"></i>
+</a>
+
+<!-- JavaScript Libraries -->
+<script src="{{ asset('frontend/lib/easing/easing.min.js') }}"></script>
+<script src="{{ asset('frontend/lib/waypoints/waypoints.min.js') }}"></script>
+
+<!-- Contact Javascript File -->
+<script src="{{ asset('frontend/mail/jqBootstrapValidation.min.js') }}"></cript>
+<script src="{{ asset('frontend/mail/contact.js') }}"></script>
+
+<!-- Template Javascript -->
+<script src="{{ asset('frontend/js/main.js') }}"></script>
+
+@endsection
